@@ -35,11 +35,6 @@ This README provides detailed steps to compile and execute the OpenCV project on
 
 ## Compilation Instructions
 
-1. **Navigate to the Project Directory**:
-   ```bash
-   cd /path/to/your/project
-   ```
-
 2. **Compile the Code**:
    Run the following command to compile the project:
    ```bash
