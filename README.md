@@ -38,7 +38,7 @@ This README provides detailed steps to compile and execute the OpenCV project on
 2. **Compile the Code**:
    Run the following command to compile the project:
    ```bash
-   g++ -o main main.cpp -I/usr/local/include/opencv4 -L/usr/local/lib -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_text
+   g++ -o main video15.cpp -I/usr/local/include/opencv4 -L/usr/local/lib -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_text
    ```
 
    - `-I/usr/local/include/opencv4`: Specifies the include path for OpenCV headers.
