@@ -1,6 +1,4 @@
-# OpenCV Project Compilation Instructions
-
-This README provides detailed steps to compile and execute the OpenCV project on your system.
+This README provides detailed steps to compile and execute the project on your system.
 
 ## Prerequisites
 
@@ -33,17 +31,31 @@ This README provides detailed steps to compile and execute the OpenCV project on
      sudo apt install g++
      ```
 
+4. **Make**:
+   - Ensure `make` is installed. You can check this with:
+     ```bash
+     make --version
+     ```
+     If not installed, use:
+     ```bash
+     sudo apt install make
+     ```
+
 ## Compilation Instructions
 
-2. **Compile the Code**:
-   Run the following command to compile the project:
+1. **Navigate to the `Rendu2` Directory**:
+   Change to the `Rendu2` directory where the project files and Makefile are located:
    ```bash
-   g++ -o main video15.cpp -I/usr/local/include/opencv4 -L/usr/local/lib -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_text
+   cd Rendu2
    ```
 
-   - `-I/usr/local/include/opencv4`: Specifies the include path for OpenCV headers.
-   - `-L/usr/local/lib`: Specifies the library path.
-   - `-lopencv_core`, `-lopencv_highgui`, etc.: Links the required OpenCV modules.
+2. **Compile the Code Using Make**:
+   Run the following command to compile the project using the provided Makefile:
+   ```bash
+   make
+   ```
+
+   This will automatically compile the code and generate the executable.
 
 3. **Set the Environment Variables**:
    Export the library paths required for runtime:
@@ -62,5 +74,8 @@ This README provides detailed steps to compile and execute the OpenCV project on
    ./main
    ```
 
-
-
+## Clean Up
+To clean the compiled files and start fresh, run:
+```bash
+make clean
+```
