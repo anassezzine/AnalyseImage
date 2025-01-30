@@ -46,7 +46,7 @@ This README provides detailed steps to compile and execute the project on your s
 1. **Navigate to the `Rendu2` Directory**:
    Change to the `Rendu2` directory where the project files and Makefile are located:
    ```bash
-   cd Rendu2
+   cd RenduFinal
    ```
 
 2. **Compile the Code Using Make**:
